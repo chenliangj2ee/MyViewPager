@@ -36,7 +36,7 @@
     var tabTitle = arrayListOf("tab1", "tab2", "tab3")  
     
     //第一步：添加fragment,一次可添加一个、或多个fragment；addFragments()入参为可变参数
-    viewpager.addFragments(TestFragment(R.layout.fragment_2), TestFragment(R.layout.fragment_3))  
+    viewpager.addFragments(TestFragment(R.layout.fragment_1), TestFragment(R.layout.fragment_2),TestFragment(R.layout.fragment_3))  
     
     //第二步：关联TabLayout，使用默认布局
     viewpager.setTabLayout(tabLayout, tabTitle)  
@@ -52,7 +52,7 @@
     var tabTitle = arrayListOf("tab1", "tab2", "tab3")  
     
     //第一步:添加fragment,一次可添加一个、或多个fragment；addFragments()入参为可变参数
-    viewpager.addFragments(TestFragment(R.layout.fragment_2), TestFragment(R.layout.fragment_3))  
+    viewpager.addFragments(TestFragment(R.layout.fragment_1), TestFragment(R.layout.fragment_2),TestFragment(R.layout.fragment_3))  
     
     //第二步:关联TabLayout，使用自定义layout布局
     viewpager.setTabLayout(tabLayout, tabTitle, R.layout.layout_tab) {  
