@@ -33,32 +33,28 @@
 ## Activity代码：
 
 ```
-     var tabTitle = arrayListOf("tab1", "tab2", "tab3")  
-    /**  
-     * 1、添加fragment:一次可添加一个、或多个fragment；addFragments()入参为可变参数
-     */  
+    var tabTitle = arrayListOf("tab1", "tab2", "tab3")  
+     
+    //1、添加fragment:一次可添加一个、或多个fragment；addFragments()入参为可变参数
     viewpager.addFragments(TestFragment(R.layout.fragment_1))  
     viewpager.addFragments(TestFragment(R.layout.fragment_2), TestFragment(R.layout.fragment_3))  
 
-    /**  
-     * 1、1关联TabLayout方式一
-     */
+
+     // 2、1关联TabLayout方式一
      viewpager.setTabLayout(tabLayout, tabTitle)  
-    /**  
-     * 1、2关联TabLayout方式二，可自定义layout布局
-     */
+     //2、2关联TabLayout方式二，可自定义layout布局
      viewpager.setTabLayout(tabLayout, tabTitle, R.layout.layout_tab) {  
           it.customView!!.button!!.text = tabTitle[it.position]  
     }  
-    /**  
-     * 3、根据实际需求需要，添加viewpager选中事件  
-      */  
+    
+    
+     //3、根据实际需求需要，添加viewpager选中事件  
     viewpager.onPageSelected {  
         Toast.makeText(this, "ViewPager选中$it", Toast.LENGTH_SHORT).show()  
     }  
-    /**  
-     * 4、根据实际需求需要，添加tabLayout选中事件  
-      */  
+    
+    
+     //4、根据实际需求需要，添加tabLayout选中事件
     viewpager.onTabSelected {  
         Toast.makeText(this, "Tab选中$it", Toast.LENGTH_SHORT).show()  
     }
