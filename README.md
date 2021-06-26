@@ -33,35 +33,35 @@
 ## 二、Activity代码,使用【默认TabLayout布局】，通常情况，第一步、第二步就可以满足你的需求；
 
 ```
-    var tabTitle = arrayListOf("tab1", "tab2", "tab3")  
+var tabTitle = arrayListOf("tab1", "tab2", "tab3")  
     
-    //第一步：添加fragment,一次可添加一个、或多个fragment；addFragments()入参为可变参数
-    viewpager.addFragments(TestFragment(R.layout.fragment_1), TestFragment(R.layout.fragment_2),TestFragment(R.layout.fragment_3))  
+//第一步：添加fragment,一次可添加一个、或多个fragment；addFragments()入参为可变参数
+viewpager.addFragments(TestFragment(R.layout.fragment_1), TestFragment(R.layout.fragment_2),TestFragment(R.layout.fragment_3))  
     
-    //第二步：关联TabLayout，使用默认布局
-    viewpager.setTabLayout(tabLayout, tabTitle)  
+//第二步：关联TabLayout，使用默认布局
+viewpager.setTabLayout(tabLayout, tabTitle)  
      
-    //第三步：非必要，根据实际需求需要，添加viewpager，TabLayout选中事件  
-    viewpager.onPageSelected {   Toast.makeText(this, "ViewPager选中$it", Toast.LENGTH_SHORT).show()  }  
-    viewpager.onTabSelected {   Toast.makeText(this, "Tab选中$it", Toast.LENGTH_SHORT).show()  }
+//第三步：非必要，根据实际需求需要，添加viewpager，TabLayout选中事件  
+viewpager.onPageSelected {   Toast.makeText(this, "ViewPager选中$it", Toast.LENGTH_SHORT).show()  }  
+viewpager.onTabSelected {   Toast.makeText(this, "Tab选中$it", Toast.LENGTH_SHORT).show()  }
     
 ```
 
 ## 三、Activity代码,使用【自定义TabLayout布局】，通常情况，第一步、第二步就可以满足你的需求；
 ```
-    var tabTitle = arrayListOf("tab1", "tab2", "tab3")  
+var tabTitle = arrayListOf("tab1", "tab2", "tab3")  
     
-    //第一步:添加fragment,一次可添加一个、或多个fragment；addFragments()入参为可变参数
-    viewpager.addFragments(TestFragment(R.layout.fragment_1), TestFragment(R.layout.fragment_2),TestFragment(R.layout.fragment_3))  
+//第一步:添加fragment,一次可添加一个、或多个fragment；addFragments()入参为可变参数
+viewpager.addFragments(TestFragment(R.layout.fragment_1), TestFragment(R.layout.fragment_2),TestFragment(R.layout.fragment_3))  
     
-    //第二步:关联TabLayout，使用自定义layout布局
-    viewpager.setTabLayout(tabLayout, tabTitle, R.layout.layout_tab) {  
-          it.customView!!.button!!.text = tabTitle[it.position]  
-    }  
+//第二步:关联TabLayout，使用自定义layout布局
+viewpager.setTabLayout(tabLayout, tabTitle, R.layout.layout_tab) {  
+    it.customView!!.button!!.text = tabTitle[it.position]  
+}  
     
-    //第三步：非必要，根据实际需求需要，添加viewpager，TabLayout选中事件  
-    viewpager.onPageSelected {   Toast.makeText(this, "ViewPager选中$it", Toast.LENGTH_SHORT).show()  }  
-    viewpager.onTabSelected {   Toast.makeText(this, "Tab选中$it", Toast.LENGTH_SHORT).show()  }
+//第三步：非必要，根据实际需求需要，添加viewpager，TabLayout选中事件  
+viewpager.onPageSelected {   Toast.makeText(this, "ViewPager选中$it", Toast.LENGTH_SHORT).show()  }  
+viewpager.onTabSelected {   Toast.makeText(this, "Tab选中$it", Toast.LENGTH_SHORT).show()  }
 ```
 
 ## 效果：TabLayout默认布局；TabLayout自定义布局；
