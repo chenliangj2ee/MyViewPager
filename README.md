@@ -2,7 +2,9 @@
 ## 用最少的代码实现最全的功能。自定义ViewPager关联Fragment滑动，并关联TabLayout，且支持自定义Tablayout布局xml，支持禁用ViewPager滑动
 
 ## 效果：
+![Video_20210626_022307_926](https://user-images.githubusercontent.com/4067327/123504615-1cfce280-d68d-11eb-8fa8-da1eb827b933.gif)
 
+![Video_20210626_022112_824](https://user-images.githubusercontent.com/4067327/123504612-179f9800-d68d-11eb-83b3-c191023beec3.gif)
 
 ## XML布局：
 ```
