@@ -17,18 +17,20 @@
   android:orientation="vertical"  
   tools:context=".MainActivity">  
   
- <com.google.android.material.tabs.TabLayout  android:id="@+id/tabLayout"  
-  android:layout_width="match_parent"  
-  android:layout_height="50dp"  
-  app:tabMaxWidth="100dp"  
-  app:tabRippleColor="#0000"  
-  app:tabSelectedTextColor="#f00"  
-  app:tabTextAppearance="@style/TabLayoutTheme"  
-  app:tabTextColor="#43433C" />  
-  
- <com.chenliang.view.MyViewPager  android:id="@+id/viewpager"  
-  android:layout_width="match_parent"  
-  android:layout_height="match_parent" />  
+   <com.google.android.material.tabs.TabLayout 
+      android:id="@+id/tabLayout"  
+      android:layout_width="match_parent"  
+      android:layout_height="50dp"  
+      app:tabMaxWidth="100dp"  
+      app:tabRippleColor="#0000"  
+      app:tabSelectedTextColor="#f00"  
+      app:tabTextAppearance="@style/TabLayoutTheme"  
+      app:tabTextColor="#43433C" />  
+
+     <com.chenliang.view.MyViewPager  
+        android:id="@+id/viewpager"  
+        android:layout_width="match_parent"  
+        android:layout_height="match_parent" />  
   
 </LinearLayout>
 ```
