@@ -1,7 +1,7 @@
 # MyViewPager
 ## 史上最精简的ViewPager，TabLayout，Fragment交互封装：自定义ViewPager关联Fragment滑动，并关联TabLayout，且支持自定义Tablayout布局xml，支持禁用ViewPager滑动；【用最少的代码实现最全的功能；最少2行代码实现想要的功能】
 
-## XML布局：
+## 一、XML布局：
 ```
 <?xml version="1.0" encoding="utf-8"?>  
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
@@ -30,17 +30,17 @@
 </LinearLayout>
 ```
   
-## Activity代码：
+## 二、Activity代码：通常情况，第一步、第二部就可以满足你的需求；
 
 ```
     var tabTitle = arrayListOf("tab1", "tab2", "tab3")  
      
-    //1、添加fragment:一次可添加一个、或多个fragment；addFragments()入参为可变参数
+    //第一步、添加fragment:一次可添加一个、或多个fragment；addFragments()入参为可变参数
     viewpager.addFragments(TestFragment(R.layout.fragment_1))  
     viewpager.addFragments(TestFragment(R.layout.fragment_2), TestFragment(R.layout.fragment_3))  
 
 
-     //2、1关联TabLayout方式一
+     //第二步、1关联TabLayout方式一
      viewpager.setTabLayout(tabLayout, tabTitle)  
      //2、2关联TabLayout方式二，可自定义layout布局
      viewpager.setTabLayout(tabLayout, tabTitle, R.layout.layout_tab) {  
@@ -48,13 +48,13 @@
     }  
     
     
-     //3、根据实际需求需要，添加viewpager选中事件  
+     //第三步、根据实际需求需要，添加viewpager选中事件  
     viewpager.onPageSelected {  
         Toast.makeText(this, "ViewPager选中$it", Toast.LENGTH_SHORT).show()  
     }  
     
     
-     //4、根据实际需求需要，添加tabLayout选中事件
+     //第四步、根据实际需求需要，添加tabLayout选中事件
     viewpager.onTabSelected {  
         Toast.makeText(this, "Tab选中$it", Toast.LENGTH_SHORT).show()  
     }
