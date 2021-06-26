@@ -1,5 +1,5 @@
 # MyViewPager
-## 用最少的代码实现最全的功能。自定义ViewPager关联Fragment滑动，并关联TabLayout，且支持自定义Tablayout布局xml，支持禁用ViewPager滑动
+## 自定义ViewPager关联Fragment滑动，并关联TabLayout，且支持自定义Tablayout布局xml，支持禁用ViewPager滑动；【用最少的代码实现最全的功能；最少2行代码实现想要的功能】
 
 ## XML布局：
 ```
@@ -35,7 +35,7 @@
 ```
      var tabTitle = arrayListOf("tab1", "tab2", "tab3")  
     /**  
-     * 1、添加fragment  
+     * 1、添加fragment:一次可添加一个、或多个fragment；addFragments()入参为可变参数
      */  
     viewpager.addFragments(TestFragment(R.layout.fragment_1))  
     viewpager.addFragments(TestFragment(R.layout.fragment_2), TestFragment(R.layout.fragment_3))  
@@ -51,13 +51,13 @@
           it.customView!!.button!!.text = tabTitle[it.position]  
     }  
     /**  
-     * 3、添加viewpager选中事件  
+     * 3、根据实际需求需要，添加viewpager选中事件  
       */  
     viewpager.onPageSelected {  
         Toast.makeText(this, "ViewPager选中$it", Toast.LENGTH_SHORT).show()  
     }  
     /**  
-     * 4、添加tabLayout选中事件  
+     * 4、根据实际需求需要，添加tabLayout选中事件  
       */  
     viewpager.onTabSelected {  
         Toast.makeText(this, "Tab选中$it", Toast.LENGTH_SHORT).show()  
