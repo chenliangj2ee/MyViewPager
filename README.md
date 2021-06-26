@@ -70,7 +70,9 @@
 ![Video_20210626_022112_824](https://user-images.githubusercontent.com/4067327/123504612-179f9800-d68d-11eb-83b3-c191023beec3.gif)
 
 
+# 请资助我一个棒棒糖吧，在此感谢：
 
+<img width="406" alt="微信图片_20210609173434" src="https://user-images.githubusercontent.com/4067327/121332592-989b2780-c94a-11eb-9543-a4e00db3b759.png">
 
 
  
