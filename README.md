@@ -7,7 +7,7 @@
 ![Video_20210626_022112_824](https://user-images.githubusercontent.com/4067327/123504612-179f9800-d68d-11eb-83b3-c191023beec3.gif)
 
 ## XML布局：
-```
+`
 <?xml version="1.0" encoding="utf-8"?>  
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
   xmlns:app="http://schemas.android.com/apk/res-auto"  
@@ -33,7 +33,7 @@
         android:layout_height="match_parent" />  
   
 </LinearLayout>
-```
+`
   
 ## Activity代码：
 
