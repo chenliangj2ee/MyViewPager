@@ -15,12 +15,7 @@
    <com.google.android.material.tabs.TabLayout 
       android:id="@+id/tabLayout"  
       android:layout_width="match_parent"  
-      android:layout_height="50dp"  
-      app:tabMaxWidth="100dp"  
-      app:tabRippleColor="#0000"  
-      app:tabSelectedTextColor="#f00"  
-      app:tabTextAppearance="@style/TabLayoutTheme"  
-      app:tabTextColor="#43433C" />  
+      android:layout_height="50dp"   />  
 
      <com.chenliang.view.MyViewPager  
         android:id="@+id/viewpager"  
