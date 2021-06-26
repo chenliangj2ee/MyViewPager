@@ -45,7 +45,7 @@
      */
      viewpager.setTabLayout(tabLayout, tabTitle)  
     /**  
-     * 1、1关联TabLayout方式二，可自定义layout布局
+     * 1、2关联TabLayout方式二，可自定义layout布局
      */
      viewpager.setTabLayout(tabLayout, tabTitle, R.layout.layout_tab) {  
           it.customView!!.button!!.text = tabTitle[it.position]  
