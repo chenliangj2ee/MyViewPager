@@ -30,7 +30,7 @@
 </LinearLayout>
 ```
   
-## 二、Activity代码：通常情况，第一步、第二部就可以满足你的需求；
+## 二、Activity代码：通常情况，第一步、第二步就可以满足你的需求；
 
 ```
     var tabTitle = arrayListOf("tab1", "tab2", "tab3")  
