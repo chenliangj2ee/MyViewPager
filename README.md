@@ -40,7 +40,7 @@
     viewpager.addFragments(TestFragment(R.layout.fragment_2), TestFragment(R.layout.fragment_3))  
 
 
-     // 2、1关联TabLayout方式一
+     //2、1关联TabLayout方式一
      viewpager.setTabLayout(tabLayout, tabTitle)  
      //2、2关联TabLayout方式二，可自定义layout布局
      viewpager.setTabLayout(tabLayout, tabTitle, R.layout.layout_tab) {  
