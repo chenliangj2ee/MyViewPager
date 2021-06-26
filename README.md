@@ -41,7 +41,7 @@ viewpager.addFragments(TestFragment(R.layout.fragment_1), TestFragment(R.layout.
 //第二步：关联TabLayout，使用默认布局
 viewpager.setTabLayout(tabLayout, tabTitle)  
      
-//第三步：非必要，根据实际需求需要，添加viewpager，TabLayout选中事件  
+//第三步：非必要，根据实际需求需要，添加viewpager，TabLayout选中事件，it为选中的position值  
 viewpager.onPageSelected {   Toast.makeText(this, "ViewPager选中$it", Toast.LENGTH_SHORT).show()  }  
 viewpager.onTabSelected {   Toast.makeText(this, "Tab选中$it", Toast.LENGTH_SHORT).show()  }
     
@@ -59,7 +59,7 @@ viewpager.setTabLayout(tabLayout, tabTitle, R.layout.layout_tab) {
     it.customView!!.button!!.text = tabTitle[it.position]  
 }  
     
-//第三步：非必要，根据实际需求需要，添加viewpager，TabLayout选中事件  
+//第三步：非必要，根据实际需求需要，添加viewpager，TabLayout选中事件，it为选中的position值  
 viewpager.onPageSelected {   Toast.makeText(this, "ViewPager选中$it", Toast.LENGTH_SHORT).show()  }  
 viewpager.onTabSelected {   Toast.makeText(this, "Tab选中$it", Toast.LENGTH_SHORT).show()  }
 ```
