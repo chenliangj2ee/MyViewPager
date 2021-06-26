@@ -1,5 +1,5 @@
 # MyViewPager
-## 自定义ViewPager关联Fragment滑动，并关联TabLayout，且支持自定义Tablayout布局xml，支持禁用ViewPager滑动；【用最少的代码实现最全的功能；最少2行代码实现想要的功能】
+## 史上最精简的ViewPager，TabLayout，Fragment交互封装：自定义ViewPager关联Fragment滑动，并关联TabLayout，且支持自定义Tablayout布局xml，支持禁用ViewPager滑动；【用最少的代码实现最全的功能；最少2行代码实现想要的功能】
 
 ## XML布局：
 ```
