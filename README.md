@@ -60,8 +60,8 @@ viewpager.onTabSelected {   Toast.makeText(this, "Tab选中$it", Toast.LENGTH_SH
 ```
 
 ## 效果：TabLayout默认布局；TabLayout自定义布局；
-![Video_20210626_022307_926](https://user-images.githubusercontent.com/4067327/123504615-1cfce280-d68d-11eb-8fa8-da1eb827b933.gif)
-![Video_20210626_022112_824](https://user-images.githubusercontent.com/4067327/123504612-179f9800-d68d-11eb-83b3-c191023beec3.gif)
+![Video_20210627_125652_338](https://user-images.githubusercontent.com/4067327/123533357-76294c80-d747-11eb-9eac-2587ca3eb38f.gif) ![Video_20210627_125704_911](https://user-images.githubusercontent.com/4067327/123533375-92c58480-d747-11eb-9a3c-5dc7e3a63998.gif)
+
 
 
 # 请资助我一个棒棒糖吧，在此感谢：
