@@ -59,8 +59,8 @@ viewpager.onPageSelected {   Toast.makeText(this, "ViewPager选中$it", Toast.LE
 viewpager.onTabSelected {   Toast.makeText(this, "Tab选中$it", Toast.LENGTH_SHORT).show()  }
 ```
 
-## 效果：TabLayout默认布局；TabLayout自定义布局；
-![Video_20210627_125652_338](https://user-images.githubusercontent.com/4067327/123533357-76294c80-d747-11eb-9eac-2587ca3eb38f.gif) ![Video_20210627_125704_911](https://user-images.githubusercontent.com/4067327/123533375-92c58480-d747-11eb-9a3c-5dc7e3a63998.gif)
+## 效果：TabLayout默认布局；                        TabLayout自定义布局；
+![Video_20210627_125652_338](https://user-images.githubusercontent.com/4067327/123533357-76294c80-d747-11eb-9eac-2587ca3eb38f.gif)   ![Video_20210627_125704_911](https://user-images.githubusercontent.com/4067327/123533375-92c58480-d747-11eb-9a3c-5dc7e3a63998.gif)
 
 
 
